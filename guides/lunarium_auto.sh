@@ -17,10 +17,14 @@ sudo apt-get update -y
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
 cd
+#remove old files
+rm lunarium*
+rm /usr/local/bin/lunarium*
+
 #get wallet files
 wget https://github.com/telostia/lunarium-guides/raw/master/wallet/linux/lunarium-linux.tar.gz
 tar -xvf lunarium-linux.tar.gz
-rm lunarium-linux.tar.gz vetani_auto.sh
+rm lunarium-linux.tar.gz lunarium_auto.sh
 chmod +x lunarium*
 cp lunarium* /usr/local/bin
 ufw allow 44071/tcp
