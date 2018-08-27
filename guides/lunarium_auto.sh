@@ -43,9 +43,11 @@ echo -e "${GREEN}Preparing config file ${NONE}";
 rm -rf $HOME/.lunarium
 sudo mkdir $HOME/.lunarium
 
-printf "rpcuser=lunarium$USER\nrpcpassword=$PASSW\nrpcport=44072\nrpcallowip=127.0.0.1\ndaemon=1\nlisten=1\nserver=1\nmaxconnections=256\nexternalip=$EXTIP:44071\nmasternode=1\nmasternodeprivkey=$MNKEY" >  $HOME/.lunarium/lunarium.conf
+printf "rpcuser=lunarium$USER\nrpcpassword=$PASSW\nrpcport=44072\nrpcallowip=127.0.0.1\ndaemon=1\nlisten=1\nserver=1\nmaxconnections=56\nexternalip=$EXTIP:44071\nmasternode=1\nmasternodeprivkey=$MNKEY" >  $HOME/.lunarium/lunarium.conf
 
 
+sleep 1
 lunariumd
+sleep 5
 watch lunarium-cli getinfo
 
