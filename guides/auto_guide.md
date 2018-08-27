@@ -1,10 +1,6 @@
-## ----------------------------------------------------
-## Lunarium COIN SIMPLE AUTO MASTER NODE SETUP GUIDE 
-## ----------------------------------------------------
+## Lunarium COIN SIMPLE AUTO MASTER NODE SETUP GUIDE
 
-### -----------------------------
 ### Windows wallet setup
-### -----------------------------
 
 Download windows wallet from these locations:
 https://github.com/LunariumCoin/lunarium/releases
