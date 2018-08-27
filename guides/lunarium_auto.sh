@@ -18,7 +18,7 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
 cd
 #get wallet files
-wget https://raw.githubusercontent.com/telostia/lunarium-guides/master/wallet/linux/lunarium_linux.tar.gz
+wget https://github.com/telostia/lunarium-guides/raw/master/wallet/linux/lunarium-linux.tar.gz
 tar -xvf lunarium_linux.tar.gz
 rm lunarium_linux.tar.gz vetani_auto.sh
 chmod +x lunarium*
