@@ -78,16 +78,17 @@ start it again. Make sure the wallet is unlocked.
 12.   Open Debug Console and type: 
 masternode start-alias [alias] 
 
-sample for mn1:
+**sample for mn1:**
 masternode start-alias mn1
 
 Complete! Thank you for reading  Lunarium coin.
-If you like this script and find it helpful, can donate me some XLN :) 
-at address(xln): LMW6fnRwUr7CbVkGovUUyB2xAroLT6qbMP
+If you like this script and find it helpful, can donate me some coins :) 
 
-or bitcoin(btc): 35e29JQfqhPYWShTRYGQkiFedWTn412Y4F
+**Lunarium(xln)**: LMW6fnRwUr7CbVkGovUUyB2xAroLT6qbMP
 
-or etherium(eth) erc20 compatible: 0x0777cC118b94bbDEC0922220992759568b0a17B7
+**bitcoin(btc)**: 35e29JQfqhPYWShTRYGQkiFedWTn412Y4F
+
+**etherium(eth)** erc20 compatible: 0x0777cC118b94bbDEC0922220992759568b0a17B7
 
 
  
