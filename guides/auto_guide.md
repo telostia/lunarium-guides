@@ -5,7 +5,7 @@
 Download windows wallet from these locations:
 https://github.com/LunariumCoin/lunarium/releases
 
-for handy I linked the most commonly used 64bit for windows: 
+For handy I linked the most commonly used 64bit for windows: 
 https://github.com/LunariumCoin/lunarium/releases/download/v1.0.0/lunarium-1.0.0-win64.zip
 
 Once its downloaded, unzip the file then run it. 
@@ -20,9 +20,9 @@ find the "lunarium" folder and double click on it.
 right click on "lunarium.conf" and open it with notepad or any text editor.
 When file is loaded, add more nodes by copy and paste this:
 
-* addnode=:44071
-* addnode=:44071
-* addnode=:44071
+addnode=80.211.30.202:44071  
+addnode=212.237.24.82:44071  
+addnode=80.211.85.215:44071  
 
 save file and exit.
 
@@ -31,7 +31,7 @@ save file and exit.
 
 Now to get a genkey for the linux side.
 
-Open the Smrt Coin Desktop Wallet. 
+Open the Lunarium Desktop Wallet. 
 Go to Tools -> "Debug console - Console" 
 Type the following command: masternode genkey
 
@@ -55,7 +55,7 @@ when asked to paste genkey. right click to paste your genkey in.
 ### Windows wallet to add masternode 
 ### ---------------------------------
 
-1.   Open the VET Coin Desktop Wallet. 
+1.   Open the Lunarium Desktop Wallet. 
 2.   Go to RECEIVE and create a New Address: MN1 
 3.   Send 10000 Lunarium to MN1. 
 4.   Wait for confirmations. 
@@ -63,10 +63,10 @@ when asked to paste genkey. right click to paste your genkey in.
 6.   Type the following command: masternode outputs 
 7.   Go to ** Tools -> "Open Masternode Configuration File" 
 8.   Add the following entry: 
-Alias Address Privkey TxHash Output_index 
+Alias Address Genkey TxHash Output_index 
 *  Alias: MN1 
 *  Address: VPS_IP:PORT (for e.g 108.5.5.5:44071)
-*  Privkey: Masternode Private Key (paste the genkey you made earlier)
+*  Genkey: Masternode genkey (paste the genkey you made earlier)
 *  TxHash: First value from Step 6 
 *  Output index: Second value from Step 6 
 
@@ -81,7 +81,7 @@ masternode start-alias [alias]
 **sample for mn1:**
 masternode start-alias mn1
 
-Complete! Thank you for reading  Lunarium coin.
+Complete! Thank you for using this guide.
 If you like this script and find it helpful, can donate me some coins :) 
 
 **Lunarium(xln)**: LMW6fnRwUr7CbVkGovUUyB2xAroLT6qbMP
