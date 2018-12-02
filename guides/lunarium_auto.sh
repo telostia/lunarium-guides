@@ -18,16 +18,20 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
 cd
 #remove old files
-rm lunarium*
-rm /usr/local/bin/lunarium*
+sudo rm lunarium*
+sudo rm /usr/local/bin/lunarium*
 
 #get wallet files
-wget https://github.com/telostia/lunarium-guides/raw/master/wallet/linux/lunarium-linux.tar.gz
-tar -xvf lunarium-linux.tar.gz
-rm lunarium-linux.tar.gz lunarium_auto.sh
-chmod +x lunarium*
-cp lunarium* /usr/local/bin
-ufw allow 44071/tcp
+#wget https://github.com/telostia/lunarium-guides/raw/master/wallet/linux/lunarium-linux.tar.gz
+sudo wget https://github.com/LunariumCoin/lunarium/releases/download/v1.0.2/lunarium-1.0.2-x86_64-linux-gnu.tar.gz
+#tar -xvf lunarium-linux.tar.gz
+#untar and strip unwanted directories to current folder
+sudo tar --strip-components=2 -zxf lunarium-1.0.2-x86_64-linux-gnu.tar.gz
+sudo cp lunarium-cli lunariumd /usr/local/bin/
+sudo rm lunarium-linux.tar.gz lunarium_auto.sh
+sudo chmod +x lunarium*
+sudo cp lunarium* /usr/local/bin
+sudo ufw allow 44071/tcp
 
 #masternode input
 
@@ -40,6 +44,7 @@ PASSW=`pwgen -1 20 -n`
 
 echo -e "${GREEN}Preparing config file ${NONE}";
 
+#remove directory if exists
 rm -rf $HOME/.lunarium
 sudo mkdir $HOME/.lunarium
 
