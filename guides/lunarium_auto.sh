@@ -27,10 +27,12 @@ sudo wget https://github.com/LunariumCoin/lunarium/releases/download/v1.0.2/luna
 #tar -xvf lunarium-linux.tar.gz
 #untar and strip unwanted directories to current folder
 sudo tar --strip-components=2 -zxf lunarium-1.0.2-x86_64-linux-gnu.tar.gz
-sudo cp lunarium-cli lunariumd /usr/local/bin/
-sudo rm lunarium-linux.tar.gz lunarium_auto.sh
 sudo chmod +x lunarium*
-sudo cp lunarium* /usr/local/bin
+sudo cp lunarium-cli lunariumd /usr/local/bin/
+#clean up
+sudo rm lunarium-linux.tar.gz lunarium_auto.sh
+sudo rm lunarium-tx lunarium-cli lunariumd lunarium-qt
+sudo rm lunarium-1.0.2-x86_64-linux-gnu.tar.gz
 sudo ufw allow 44071/tcp
 
 #masternode input
