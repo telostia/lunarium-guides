@@ -5,8 +5,8 @@
 Download windows wallet from these locations:
 https://github.com/LunariumCoin/lunarium/releases
 
-For handy I linked the most commonly used 64bit for windows: 
-https://github.com/LunariumCoin/lunarium/releases/download/v1.0.0/lunarium-1.0.0-win64.zip
+For handy I linked the most commonly used 64bit for windows: (updated to v1.0.2)
+https://github.com/LunariumCoin/lunarium/releases/download/v1.0.2/lunarium-1.0.2-win64.zip
 
 Once its downloaded, unzip the file then run it. 
  
