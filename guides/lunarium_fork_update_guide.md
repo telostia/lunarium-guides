@@ -19,7 +19,7 @@ Now move on to linux vps setup.
 
 Log into your linux Vps and copy the line below and press enter:
 
-* cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/lunarium-guides/master/guides/lunarium_fork_update_guide.sh)"
+* cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/lunarium-guides/master/guides/lunarium_fork_update.sh)"
 
 when asked to paste genkey. right click to paste your genkey in.
 
