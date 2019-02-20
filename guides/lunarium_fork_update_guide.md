@@ -2,11 +2,11 @@
 
 ### Windows wallet setup
 
-Download fork v1.1.0 windows wallet from these locations:
+Download fork v1.1.1 windows wallet from these locations:
 https://github.com/LunariumCoin/lunarium/releases
 
 For handy I linked the most commonly used 64bit for windows: (updated to v1.0.2)
-https://github.com/LunariumCoin/lunarium/releases/download/v1.1.0/lunarium-1.1.0-win64.zip
+https://github.com/LunariumCoin/lunarium/releases/download/v1.1.1/lunarium-1.1.1-win64.zip
 
 backup your wallets first by copying the data folder.
 Run new wallet and sync it.
